@@ -1,4 +1,5 @@
 venv
-data
+cifar10_data
 **.pth
 .ipynb_checkpoints
+__pycache__
