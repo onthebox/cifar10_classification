@@ -3,3 +3,4 @@ cifar10_data
 **.pth
 .ipynb_checkpoints
 __pycache__
+imgs

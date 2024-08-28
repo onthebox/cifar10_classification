@@ -33,12 +33,13 @@ def get_dataloaders_cifar10(batch_size: int, num_workers: int = 0,
         download=True
     )
 
-    val_dataset = torchvision.datasets.CIFAR10(
-        root='cifar10_data',
-        train=True,
-        transform=test_transforms,
-        download=True
-    )
+    if val_fraction:
+        val_dataset = torchvision.datasets.CIFAR10(
+            root='cifar10_data',
+            train=True,
+            transform=test_transforms,
+            download=True
+        )
 
     test_dataset = torchvision.datasets.CIFAR10(
         root='cifar10_data',
